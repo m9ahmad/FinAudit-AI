@@ -1,20 +1,58 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# FinAudit AI
 
-# Run and deploy your AI Studio app
+FinAudit AI is a Multimodal Universal Financial Auditor designed to ingest, parse, and analyze financial documents across various formats (PDF, Excel, CSV, Images). It provides instant, professional-grade audits with a focus on AML (Anti-Money Laundering) compliance.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/03c83edd-90c8-4ec2-afbf-a45f70e4973a
+- **Format Agnostic Parsing:** Upload messy Excel sheets, CSVs, PDFs, or even images of receipts. The system automatically extracts the relevant financial data.
+- **Universal Currency Normalization:** Automatically detects currencies (USD, EUR, GBP, PKR, BHD, QAR, etc.) and converts all values to BHD (Bahraini Dinar) based on 2026 exchange rates for standardized analysis.
+- **AML Anomaly Detection:** Identifies "Red Flags" such as structuring (smurfing), rapid movement of funds, and profile mismatches.
+- **Automated Summaries:** Generates a comprehensive "Summary of Financial Health and Risk" with a clear risk rating (Low, Medium, High).
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (v18 or higher)
+- npm or yarn
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+### Running the Application
+
+Start the development server:
+```bash
+npm run dev
+```
+
+Build for production:
+```bash
+npm run build
+```
+
+## Technologies Used
+
+- React 18
+- TypeScript
+- Tailwind CSS
+- Google Gemini API (gemini-3-flash-preview)
+- XLSX (for Excel/CSV parsing)
+- Lucide React (Icons)
+- Framer Motion (Animations)
+
+## License
+
+MIT License
