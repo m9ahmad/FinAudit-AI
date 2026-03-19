@@ -1,0 +1,5 @@
+{
+  "name": "FinAudit AI",
+  "description": "Multimodal Universal Financial Auditor for parsing ledgers, bank statements, and identifying AML risks.",
+  "requestFramePermissions": []
+}
